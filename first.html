@@ -16,29 +16,21 @@
                     placeholder="Amount of stickers">
                 <input type="text" id="contact" name="contact" 
                 placeholder="Form of Contact ex. email, snapchat, instagram.">
-                <input type="file" id="file-sticker" name="image" multiple accept="image/*" onchange="loadFile(event)">
-                <img id="output" width="200" />
-                <script>
-                var loadFile = function(event) {
-	                var image = document.getElementById('output');
-	                image.src = URL.createObjectURL(event.target.files[0]);
-                };
-                </script>
-                                                                                                                                                                                                                                            
+                <input type="file" id="file-sticker" name="image" multiple accept="image/*" onchange="loadFile(event)">                                                                                                                                                                                                            
                 <h3>Sizes</h3>
                 <p>*The largest stickers that will be made will be 5' x 5'. </br>
                     Please choose a size.</p>
                 <div class="sizes">
-                    <input type="radio" id="size1" value="two-inches" name="radio">
+                    <input type="radio" id="size1" value="twobytwo" name="radio">
                     <label for="size1">2x2 in.</label>
 
-                    <input type="radio" id="size2" value="three-inches" name="radio">
+                    <input type="radio" id="size2" value="threebythree" name="radio">
                     <label for="size2">3x3 in.</label>
 
-                    <input type="radio" id="size3" value="four-inches" name="radio">
+                    <input type="radio" id="size3" value="fourbyfour" name="radio">
                     <label for="size3">4x4 in.</label>
 
-                    <input type="radio" id="size4" value="five-inches" name="radio">
+                    <input type="radio" id="size4" value="fivebyfive" name="radio">
                     <label for="size4">5x5 in.</label>
                     
                     <input type="radio" id="size5" value="other" name="radio">
