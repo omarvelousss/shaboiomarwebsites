@@ -16,7 +16,15 @@
                     placeholder="Amount of stickers">
                 <input type="text" id="contact" name="contact" 
                 placeholder="Form of Contact ex. email, snapchat, instagram.">
-                <input type="file" id="file-sticker" name="file" mutiple accept="image/*">
+                <input type="file" id="file-sticker" name="image" multiple accept="image/*" onchange="loadFile(event)">
+                <img id="output" width="200" />
+                <script>
+                var loadFile = function(event) {
+	                var image = document.getElementById('output');
+	                image.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>
+                                                                                                                                                                                                                                            
                 <h3>Sizes</h3>
                 <p>*The largest stickers that will be made will be 5' x 5'. </br>
                     Please choose a size.</p>
