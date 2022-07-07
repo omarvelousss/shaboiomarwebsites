@@ -89,3 +89,10 @@ textarea {
     resize: vertical;
 }
 
+a {
+    color: cyan;
+}
+
+a:hover {
+    color: azure;
+}
